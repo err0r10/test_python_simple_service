@@ -6,6 +6,6 @@ COPY . /app
 WORKDIR /app
 RUN pip3 install poetry && poetry install
 RUN export FLASK_APP=app.py
-EXPOSE 5000
+EXPOSE 5001
 
 ENTRYPOINT ["poetry", "run", "python3", "app.py"]
